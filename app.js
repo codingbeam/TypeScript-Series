@@ -1,8 +1,5 @@
-function add(a, b) {
-    return "".concat(a, " ").concat(b);
-}
-console.log(add("Nikhil", 'Thadani'));
-function add(a, b) {
-    return a + b;
-}
-console.log(add(1, 2));
+"use strict";
+exports.__esModule = true;
+var Employee_1 = require("./Employee");
+var emp = new Employee_1.Employee("Mohit", 20);
+console.log(emp.display());
