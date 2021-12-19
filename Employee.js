@@ -19,14 +19,16 @@ exports.Employee = void 0;
 var Person_1 = require("./Person");
 var Employee = /** @class */ (function (_super) {
     __extends(Employee, _super);
-    function Employee(name, empCode) {
+    function Employee(name, age) {
         var _this = _super.call(this, name) || this;
-        _this.empCode = empCode;
+        _this.age = age;
         return _this;
     }
-    Employee.prototype.display = function () {
-        // return super.display()
-        return "".concat(this.name, " ").concat(this.empCode);
+    Employee.prototype.getName = function () {
+        return "".concat(this.name);
+    };
+    Employee.prototype.getAge = function () {
+        return this.age;
     };
     return Employee;
 }(Person_1.Person));

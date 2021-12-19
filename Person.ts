@@ -1,10 +1,10 @@
-export class Person{
-    readonly name:string = "Nikhil";
-    constructor(name: string) {
-        this.name = name
+ export abstract class Person {
+    name: string;
+
+    constructor(name:string) {
+        this.name = name;
     }
-    display(): string{
-      return `${this.name}`
-  }
-    
- }
+
+    abstract getName(): string;
+    abstract getAge(): number;
+}
